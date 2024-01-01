@@ -46,10 +46,16 @@ class Pizza:
                continue
       def _getMenuName():
          #SC3 get the name of the menu item
-         menuName = input("Please enter the menu name for " + self.menuCode + ".\n>")
-         
+         while (True):
+            menuName = input("Please enter the menu name for " + self.menuCode + ".\n>")
+            if (len(menuName) == 0):
+               print("\n\n")
+               continue
+            else:
+               self.menuName = menuName
+               break
       def _getInventoryQuantity():
-         print(str(number))
+         #SC4
       _getMenuCode()
       _getMenuName()
       _getInventoryQuantity()
