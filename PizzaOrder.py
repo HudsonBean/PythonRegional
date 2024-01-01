@@ -55,7 +55,8 @@ class Pizza:
                self.menuName = menuName
                break
       def _getInventoryQuantity():
-         #SC4
+         print(str(number))
+      #SC4
       _getMenuCode()
       _getMenuName()
       _getInventoryQuantity()
